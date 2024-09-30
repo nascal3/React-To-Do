@@ -1,0 +1,37 @@
+li {
+    font-weight: bold;
+    border-bottom: solid 1px lightgrey;
+    line-height: 4;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.text {
+    white-space: nowrap;      /* Prevent text from wrapping */
+    overflow: hidden;         /* Hide the overflowing text */
+    text-overflow: ellipsis;  /* Display ellipses (...) for overflow */
+    width: 200px;
+}
+
+.done {
+    text-decoration: line-through;
+    color: lightgrey;
+    font-style: italic;
+}
+
+.deleteButton {
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    font-weight: 600;
+    cursor: pointer;
+    background: lightcoral;
+    color: white;
+}

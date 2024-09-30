@@ -1,0 +1,17 @@
+import Todo from "./components/Todo.jsx";
+import Header from "./components/Header.jsx";
+import Form from "./components/Form.jsx";
+
+import "./App.css"
+function App() {
+
+  return (
+    <div className="App">
+        <Header/>
+        <Form/>
+        <Todo todos={todos} />
+    </div>
+  )
+}
+
+export default App
